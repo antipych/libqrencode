@@ -25,7 +25,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#ifdef WIN32
+#include "getopt.h"
+#else
 #include <getopt.h>
+#endif
 #include <errno.h>
 #if HAVE_PNG
 #include <png.h>

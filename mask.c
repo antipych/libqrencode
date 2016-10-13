@@ -21,6 +21,8 @@
 
 #if HAVE_CONFIG_H
 # include "config.h"
+#else if WIN32
+# include "configwin32.h"
 #endif
 #include <stdlib.h>
 #include <string.h>
